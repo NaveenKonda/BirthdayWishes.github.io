@@ -1,0 +1,393 @@
+body {
+    background-image: url("dandeli-kali-river-karnataka.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.container button{
+	display: block;
+}
+
+.one, .two, .three, .four{
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  padding: 15px 190px 10px 85px;
+  margin-bottom: 10px;
+  font-size: 15px;
+  position: relative;
+  white-space: nowrap;
+  color: white;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  width: 40px;
+  -webkit-transition: background-position .7s,box-shadow .4s;
+  transition: background-position .7s,box-shadow .4s;
+  background-size: 110%;
+  font-family: 'Oswald', sans-serif;
+}
+.one:hover, .two:hover, .three:hover, .four:hover, .five:hover {
+  background-position: 0% 30%;
+}
+.one:hover:after, .two:hover:after, .three:hover:after, .four:hover:after, .five:hover:after {
+  right: -10px;
+  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
+}
+.one:before, .two:before, .three:before, .four:before, .five:before, .one:after, .two:after, .three:after, .four:after, .five:after {
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+.one:before, .two:before, .three:before, .four:before, .five:before {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 10px;
+  left: 10px;
+  top: 19px;
+}
+.one:after, .two:after, .three:after, .four:after, .five:after {
+  -webkit-transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, transform .2s;
+  transition: right .4s, transform .2s, -webkit-transform .2s;
+  font-size: 100px;
+  opacity: .3;
+  right: -200px;
+  top: -17px;
+}
+
+.one {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #782CDA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#782CDA), to(rgba(126, 94, 162, 0.51)));
+  background-image: linear-gradient(to bottom, #782CDA, rgba(126, 94, 162, 0.51));
+}
+.one:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #782CDA;
+}
+.one:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.one:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.one b {
+  color: #DDA6FF;
+  font-weight: 700;
+}
+
+.two {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #E48A3C;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#E48A3C), to(rgba(222, 135, 61, 0.24)));
+  background-image: linear-gradient(to bottom, #E48A3C, rgba(222, 135, 61, 0.24));
+}
+.two:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #E48A3C;
+}
+.two:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.two:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.two b {
+  color: #FFD9B4;
+  font-weight: 700;
+}
+
+.three {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #36C176;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#36C176), to(rgba(86, 202, 139, 0.18)));
+  background-image: linear-gradient(to bottom, #36C176, rgba(86, 202, 139, 0.18));
+}
+.three:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #36C176;
+}
+.three:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.three:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.three b {
+  color: #63FFAC;
+  font-weight: 700;
+}
+
+.four {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #33E7EA;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#33E7EA), to(rgba(161, 245, 245, 0.24)));
+  background-image: linear-gradient(to bottom, #33E7EA, rgba(161, 245, 245, 0.24));
+}
+.four:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #33E7EA;
+}
+.four:hover:after {
+  -webkit-transform: rotate(3000deg);
+          transform: rotate(3000deg);
+}
+.four:hover:before {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+.four b {
+  color: #1CF4FF;
+  font-weight: 700;
+}
+ 
+.wish {
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    top: -14%;
+    width: 100%;
+    text-align: center;
+    font-size: 80px;
+	color: #fff;
+    font-family: 'Trebuchet MS';
+	animation: glow 1s ease-in-out infinite alternate;
+}
+ 
+@-webkit-keyframes hue {
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+        transform: scale(1) rotate(0deg);
+    }
+ 
+    50% {
+        -webkit-filter: hue-rotate(360deg);
+        transform: scale(1.2) rotate(5deg);
+    }
+}
+@-webkit-keyframes run {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100%;
+  }
+  100% {
+    left: 0;    
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e673, 0 0 40px #00e673, 0 0 50px #00e673, 0 0 60px #00e673, 0 0 70px #00e673;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #707ba4, 0 0 50px #707ba4, 0 0 60px #707ba4, 0 0 70px #707ba4, 0 0 80px #707ba4;
+  }
+}
+ 
+.cake {
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin-top: -70px;
+    margin-left: -125px;
+	 bottom: 15%;
+  position: absolute;
+  -webkit-animation: linear infinite;
+  -webkit-animation-name: run;
+  -webkit-animation-duration: 30s;
+	
+}
+ 
+.plate {
+    position: absolute;
+    width: 290px;
+    height: 130px;
+    bottom: -10px;
+    left: -15px;
+    background-color: #ccc;
+    border-radius: 25%;
+    box-shadow: 0 5px 0 0 #000;
+}
+ 
+.cake>* {
+    position: absolute;
+}
+ 
+.layer {
+    position: absolute;
+    display: block;
+    width: 250px;
+    height: 100px;
+    border-radius: 25%;
+    background-color: #2a0a0a;
+    border: 3px solid #fff;
+    box-shadow:
+        0 15px 0 0 #2a0a0a,
+        0 30px 0 0 #2a0a0a,
+        0 33px 0 0 #fff,
+        0 45px 0 0 #2a0a0a,
+        0 60px 0 0 #2a0a0a,
+        0 63px 0 0 #fff,
+        0 75px 0 0 #2a0a0a,
+        0 90px 0 0 #2a0a0a;
+}
+ 
+.icing {
+    top: 3px;
+    left: 3px;
+    background-color: #fff;
+    border: 5px dotted #2a0a0a;
+    width: 240px;
+    height: 90px;
+    border-radius: 25%;
+}
+ 
+.name {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: #2a0a0a;
+    font-family: 'Pacifico', cursive;
+}
+ 
+.candle1 {
+    z-index: 10;
+    width: 10px;
+    height: 50px;
+    background-color: #fe2e2e;
+    border-radius: 4px;
+    top: -25px;
+    left: 50%;
+    margin-left: -8px;
+}
+ 
+.flame1 {
+    border-bottom-left-radius: 45% 35%;
+    border-bottom-right-radius: 45% 35%;
+    box-shadow: 0 -15px 2px 2px #ffc205;
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 5px;
+    top: -30px;
+    left: 30%;
+    position: absolute;
+}
+ 
+.candle2 {
+    z-index: 10;
+    width: 10px;
+    height: 50px;
+    background-color: #fe2e2e;
+    border-radius: 4px;
+    top: -25px;
+    left: 80%;
+    margin-left: -8px;
+}
+ 
+.flame2 {
+    border-bottom-left-radius: 45% 35%;
+    border-bottom-right-radius: 45% 35%;
+    box-shadow: 0 -15px 2px 2px #ffc205;
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 5px;
+    top: -30px;
+    left: 30%;
+    position: absolute;
+}
+ 
+.candle3 {
+    z-index: 10;
+    width: 10px;
+    height: 50px;
+    background-color: #fe2e2e;
+    border-radius: 4px;
+    top: -25px;
+    left: 20%;
+    margin-left: -8px;
+}
+ 
+.flame3 {
+    border-bottom-left-radius: 45% 35%;
+    border-bottom-right-radius: 45% 35%;
+    box-shadow: 0 -15px 2px 2px #ffc205;
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 5px;
+    top: -30px;
+    left: 30%;
+    position: absolute;
+}
+ 
+.candle4 {
+    z-index: 10;
+    width: 10px;
+    height: 50px;
+    background-color: #fe2e2e;
+    border-radius: 4px;
+    top: 15px;
+    left: 15%;
+    margin-left: -8px;
+}
+ 
+.flame4 {
+    border-bottom-left-radius: 45% 35%;
+    border-bottom-right-radius: 45% 35%;
+    box-shadow: 0 -15px 2px 2px #ffc205;
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 5px;
+    top: -30px;
+    left: 30%;
+    position: absolute;
+}
+ 
+.candle5 {
+    z-index: 10;
+    width: 10px;
+    height: 50px;
+    background-color: #fe2e2e;
+    border-radius: 4px;
+    top: 15px;
+    left: 85%;
+    margin-left: -8px;
+}
+ 
+.flame5 {
+    border-bottom-left-radius: 45% 35%;
+    border-bottom-right-radius: 45% 35%;
+    box-shadow: 0 -15px 2px 2px #ffc205;
+    background-color: yellow;
+    border-radius: 50%;
+    height: 30px;
+    width: 5px;
+    top: -30px;
+    left: 30%;
+    position: absolute;
+}
+ 
+.text {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    font-family: 'Pacifico', cursive;
+}

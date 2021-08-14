@@ -1,0 +1,225 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:100vh;
+  background-color: #073b4c;
+}
+
+.birthdayCard {
+  position: relative;
+  width: 250px;
+  height:350px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform: perspective(2500px);
+  transition: 1s;
+}
+
+.birthdayCard:hover {
+  transform: perspective(2500px) rotate(5deg);
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 0 10px 100px rgba(0,0,0,0.5);
+}
+
+.birthdayCard:hover .cardFront {
+  transform: rotateY(-160deg); 
+}
+
+.birthdayCard:hover .happy {
+  visibility:hidden; 
+}
+
+.cardFront {
+  position: relative;
+  background-color: #fff;
+  width: 450px;
+  height:400px;
+  overflow: hidden;
+  transform-origin: left;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,.2), 30px 0 50px rgba(0,0,0,0.4);
+  transition: .6s;
+}
+
+.happy {
+  font-family: Tahoma, sans-serif;
+  text-align: center;
+  margin:30px; 
+  background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  transition: .6s;
+}
+
+.balloons {
+  position: absolute;
+}
+
+.balloonOne, .balloonTwo, .balloonThree, .balloonFour {
+  position: absolute;
+  width: 85px;
+  height:95px;
+  border-radius:50%;
+}
+
+.balloonOne {
+  background-color: rgb(239, 71, 111, 0.7);
+  left:-10px;
+  top:50px;
+}
+
+.balloonTwo {
+  background-color: rgb(6, 214, 160, 0.7);
+  left:50px;
+  top:20px;
+}
+
+.balloonThree {
+  background-color: rgb(255, 209, 102, 0.7);
+  left:110px;
+  top:50px;
+}
+
+.balloonFour {
+  background-color: rgb(17, 138, 178, 0.7);
+  left:170px;
+  top:20px;
+}
+
+.balloonOne:before, .balloonTwo:before, .balloonThree:before, .balloonFour:before {
+  content:"";
+  position: absolute;
+  width:1px;
+  height: 155px;
+  background-color: #ffd166;
+  top:95px;
+  left:43px;
+}
+
+.balloonOne:after, .balloonTwo:after, .balloonThree:after, .balloonFour:after {
+  content:"";
+  position: absolute;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  top:94px;
+  left:37px;
+}
+
+.balloonOne:after {
+  border-bottom: 10px solid #ef476f;
+}
+
+.balloonTwo:after {
+  border-bottom: 10px solid #06d6a0;
+}
+
+.balloonThree:after {
+  border-bottom: 10px solid #ffd166;
+}
+
+.balloonFour:after {
+  border-bottom: 10px solid #118ab2;
+}
+
+.cardInside {
+  position: absolute;
+  background-color: #fff;
+  width: 450px;
+  height:400px;
+  z-index:-1;
+  left:0;
+  top:0;
+  box-shadow: inset 100px 20px 100px rgba(0,0,0,0.2);
+}
+
+p {
+  font-family: 'Garamond';
+  margin: 40px;
+  color: #333;
+}
+
+.name {
+  position: absolute;
+  left:150px;
+  top:200px;
+  color: #333;
+}
+
+.back {
+  color: #333;
+  text-align: center;
+  margin:30px; 
+  outline-color:#333;
+  outline-style: dotted;
+}
+
+.one1{
+  border: none;
+  border-radius: 4px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.48);
+  padding: 15px 120px 10px 25px;
+  margin-bottom: 0px;
+  font-size: 15px;
+  position: absolute;
+  white-space: nowrap;
+  top:0;
+  right:0;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  width: 40px;
+  -webkit-transition: background-position .7s,box-shadow .4s;
+  transition: background-position .7s,box-shadow .4s;
+  background-size: 110%;
+  font-family: 'Oswald', sans-serif;
+}
+.one1:hover{
+  background-position: 0% 30%;
+}
+.one1:hover:after{
+  right: -10px;
+  -webkit-transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,-webkit-transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear;
+  transition: right .4s,transform 30s .2s linear,-webkit-transform 30s .2s linear;
+}
+.one1:before{
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+}
+.one1:before{
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  font-size: 10px;
+  left: 10px;
+  top: 19px;
+}
+.one1:after {
+  -webkit-transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, -webkit-transform .2s;
+  transition: right .4s, transform .2s;
+  transition: right .4s, transform .2s, -webkit-transform .2s;
+  font-size: 100px;
+  opacity: .3;
+  right: -200px;
+  top: -17px;
+}
+
+.one1 {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 10px 0px #7dbf77;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7dbf77), to(rgba(126, 94, 162, 0.51)));
+  background-image: linear-gradient(to bottom, #7dbf77, rgba(126, 94, 162, 0.51));
+}
+.one1:hover {
+  box-shadow: 0px 0px 0px 2px rgba(255, 255, 255, 0.16) inset, 0px 0px 30px 0px #7dbf77;
+}
+.one1:hover:after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.one1:hover:before {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.one1 b {
+  color: #DDA6FF;
+  font-weight: 700;
+}

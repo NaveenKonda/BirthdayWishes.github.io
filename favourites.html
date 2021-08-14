@@ -1,0 +1,66 @@
+<!-- Coding Debugging (https://codingdebugging.com) -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Happy Birthday Wishing - Coding Debugging</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <!-- My Stylesheet -->
+        <link rel="stylesheet" href="favourites.css">
+    </head>
+    
+    <body>
+	<div id="balloon-container">
+	<form>
+	<input type="button" onclick="play();" value = "Listen to your fav song" class="one" style="height:45px;width=60px" align="center">
+	<input type="button" onclick="showImage();" value = "Wishes from special person" class="two" style="height:45px;width=150px" align="center">
+	</form>
+	<img id="loadingImage" src="final.jpg" style="visibility:hidden"/>
+	</div>
+  <script>
+  function play() {
+  var audio = new Audio('Vathikkalu Vellaripravu Video Song _ Sufiyum Sujatayum _ M Jayachandran _ Vijay Babu.mp3');
+  audio.play();
+}
+function showImage(){
+        document.getElementById('loadingImage').style.visibility="visible";
+    }
+
+
+	function random(num) {
+  return Math.floor(Math.random()*num)
+}
+
+function getRandomStyles() {
+  var r = random(255);
+  var g = random(255);
+  var b = random(255);
+  var mt = random(200);
+  var ml = random(50);
+  var dur = random(10)+10;
+  return `
+  background-color: rgba(${r},${g},${b},0.7);
+  color: rgba(${r},${g},${b},0.7); 
+  box-shadow: inset -7px -3px 10px rgba(${r-10},${g-10},${b-10},0.7);
+  margin: ${mt}px 0 0 ${ml}px;
+  animation: float ${dur}s ease-in infinite
+  `
+}
+
+function createBalloons(num) {
+  var balloonContainer = document.getElementById("balloon-container")
+  for (var i = num; i > 0; i--) {
+  var balloon = document.createElement("div");
+  balloon.className = "balloon";
+  balloon.style.cssText = getRandomStyles();           balloonContainer.append(balloon);
+  }
+}
+
+window.onload = function() {
+  createBalloons(100);
+}
+  </script>
+   </body>
+</html>
